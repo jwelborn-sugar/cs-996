@@ -11,6 +11,9 @@
     <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
     <script src="amazon-connect-chat-interface.js"></script>
+    <style>
+        
+    </style>
 </head>
 <body>
 
@@ -57,7 +60,20 @@
     <script>
         $(document).ready((a) => {
             connect.ChatInterface.init({
-                containerId: 'root' // This is the id of the container where you want the widget to reside
+                containerId: 'root', // This is the id of the container where you want the widget to reside
+                headerConfig: {
+                    isHTML: true,
+                    render: function() {
+                        return (
+                            `
+                            <div class="chat-headerpane">
+                                <h2> Sugar Chat Widget </h1>
+                                <p> This is the header of our chat widget. We can add any HTML we want here. </p>
+                            </div>
+                            `
+                        );
+                    }
+                }
             });
         });
 
