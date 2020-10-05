@@ -16,15 +16,23 @@
             background-color: #093145;
             color: white;
             text-align: center;
+            padding: 15px;
         }
         .chat-headerpane > .headertext {
              margin: 10px auto;
-             display: block;
         }
         .chat-headerpane > img {
             height: 50px;
             width: 50px;
-            margin: 0 auto;
+            float: left;
+        }
+
+        div[direction="Incoming"], div[direction="Incoming"]::after {
+            background-color:#c3e0f0;
+        }
+
+        div[direction="Outgoing"], div[direction="Outgoing"]::after {
+            background-color: #ffdebc;
         }
     </style>
 </head>
