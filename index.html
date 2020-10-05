@@ -27,12 +27,17 @@
             float: left;
         }
 
-        div[direction="Incoming"], div[direction="Incoming"]::after {
+        div[direction="Incoming"] {
             background-color:#c3e0f0;
         }
-
-        div[direction="Outgoing"], div[direction="Outgoing"]::after {
+        div[direction="Incoming"]::after {
+            border-bottom: 9px solid #c3e0f0;
+        }
+        div[direction="Outgoing"] {
             background-color: #ffdebc;
+        }
+        div[direction="Outgoing"]::after {
+            border-bottom: 9px solid #ffdebc;
         }
     </style>
 </head>
