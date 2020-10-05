@@ -12,7 +12,20 @@
 
     <script src="amazon-connect-chat-interface.js"></script>
     <style>
-        
+        .chat-headerpane {
+            background-color: #093145;
+            color: white;
+            text-align: center;
+        }
+        .chat-headerpane > .headertext {
+             margin: 10px auto;
+             display: block;
+        }
+        .chat-headerpane > img {
+            height: 50px;
+            width: 50px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -67,8 +80,11 @@
                         return (
                             `
                             <div class="chat-headerpane">
-                                <h2> Sugar Chat Widget </h1>
-                                <p> This is the header of our chat widget. We can add any HTML we want here. </p>
+                                <img src="logo.png" />
+                                <div class="headertext">
+                                    <h2> Sugar Chat Widget </h1>
+                                    <p> This is the header of our chat widget. We can add any HTML we want here. </p>
+                                </div>
                             </div>
                             `
                         );
